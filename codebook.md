@@ -1,6 +1,11 @@
+
+##Identifiers
+    - subject - The ID of the test subject
+    - activity - The type of activity performed when the corresponding measurements were taken
+
 ##Data transformation
 
-The raw data sets are processed with run_analisys.R script to create a tidy data set [12].
+The raw data sets are processed with run_analisys.R script to create a tidy data set.
 Merge training and test sets
 
 - Test and training data (X_train.txt, X_test.txt), subject ids (subject_train.txt, subject_test.txt) and activity ids (y_train.txt, y_test.txt) are merged to obtain a single data set. Variables are labelled with the names assigned by original collectors (features.txt).
@@ -27,3 +32,13 @@ Create a tidy data set
 For variables derived from mean and standard deviation estimation, the previous labels are augmented with the terms "Mean" or "StandardDeviation".
 
 The data set is written to the file project_output.txt.
+
+##Activity Labels
+
+   -- WALKING (value 1): subject was walking during the test
+   -- WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test
+   -- WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test
+   -- SITTING (value 4): subject was sitting during the test
+   -- STANDING (value 5): subject was standing during the test
+   -- LAYING (value 6): subject was laying down during the test
+
